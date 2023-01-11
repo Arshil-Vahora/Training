@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+    height: 50px;
+    letter-spacing: 1ch;
+    font-style: italic;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(rgb(179, 0, 0) 75%,rgb(255, 26, 26)75% 100%);
+}
+h2{
+    background-color: rgba(53, 167, 53, 0.989);
+    color: white;
+    padding-left: 10px;
+}
+h3{
+    color: gray;
+}
+table,tr,td{
+    border: 1px solid black;
+}
+form >*:not(input,textarea){
+   line-height: 50px;
+}

@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url('../assets/fonts/Quicksand-Medium.ttf');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url('../assets/fonts/Quicksand-Bold.ttf');
+    font-weight: bold;
+}
+
+html,
+body {
+    min-height: 100vh;
+    background-color: #EEEEEE;
+    font-family: Quicksand;
+}
+
+input, select, textarea, button{font-family:inherit;}
+
+input:focus,
+select:focus {
+    outline: none;
+}
+
+
+
+/* Header */
+
+.header {
+    background-image: url("../assets/icons/header bg.png");
+    opacity: 0.9;
+    padding: 10px 20px;
+    border-bottom: 2px solid #3AC7EC;
+
+}
+
+.header .logo {
+    height: 36px;
+}
+
+.header .logo>img {
+    height: 100%;
+}
+
+.header::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* Login Form Start */
+
+
+.formContainer {
+    position: relative;
+    width: 490px;
+    margin-top: 108px;
+    padding: 20px 32px;
+    background-color: #ffff;
+    border-top: 4px solid #3AC7EC;
+}
+
+
+.formHeader {
+    display: flex;
+    justify-content: center;
+}
+
+.formHeader .backBtn>img {
+    width: 100%;
+    height: 100%;
+}
+
+.formHeader .title {
+    font-weight:bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: rgba(34, 34, 34, 1);
+    letter-spacing: 0px;
+}
+
+
+/* Common For Radio and CheckBox*/
+
+input:where([type="radio"], [type=checkbox]) {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+}
+
+
+/* Radio Button */
+
+
+.radioGrp {
+    display: flex;
+    margin-top: 32px;
+}
+
+.radioGrp .radio {
+    display: flex;
+}
+
+
+.radioGrp .radio>input[type=radio] {
+    background-image: url('../assets/icons/radio-button-off.svg');
+}
+
+.radioGrp .radio>input[type=radio]:checked {
+    background-image: url('../assets/icons/radio-button-on.svg');
+}
+
+.radioGrp>div:nth-child(2) {
+    margin-left: 32px;
+}
+
+.radioGrp .radio>label {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(51, 51, 51, 1);
+}
+
+
+
+/* Spinner */
+
+.spinner {
+    margin-top: 25px;
+}
+
+.spinner>label {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    color: rgba(102, 102, 102, 1);
+}
+
+.spinner>select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    padding-bottom: 5px;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgb(34, 34, 34, 1);
+
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+
+    background-image: url('../assets/icons/arrow-down.svg');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 3px) center;
+    background-size: 20px;
+}
+
+.userInput:nth-of-type(1){
+    margin-top: 55px;
+}
+.userInput{
+    margin-top: 25px;
+}
+
+.userInput>input {
+    display: block;
+    width: 100%;
+    padding-bottom: 5px;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgb(34, 34, 34, 1);
+
+}
+
+.userInput>a {
+    display: block;
+    width: 100%;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: right;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 122, 84, 1);
+}
+
+
+
+
+.checkbox {
+    display: flex;
+}
+
+.checkbox>input[type=checkbox] {
+    background-image: url('../assets/icons/checkbox-unchecked.svg');
+}
+
+.checkbox>input[type=checkbox]:checked {
+    background-image: url('../assets/icons/checkbox-checked.svg');
+}
+
+.checkbox>label {
+    font: normal normal 600 16px/20px Quicksand;
+    letter-spacing: 0px;
+    color: rgba(34, 34, 34, 1);
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+
+
+.submit {
+    margin-top: 34px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.submit>input {
+    width: 50%;
+    background-color:rgba(63, 210, 139, 1);
+    font: normal normal 600 14px/18px Quicksand;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    color: rgba(31, 40, 52, 1);
+    padding: 11px 60px;
+    border: none;
+    outline: none;
+
+}
+
+
+
+/* Login Form End*/
+
+
+
+/* Footer Start */
+
+
+.footer{
+    width: 100%;
+    margin-top: 32px;
+    font-weight:500;
+    font-size:12px;
+    line-height:16px;
+    color: rgba(97, 97, 97, 1);
+}
+
+.footer .copyright{
+    width: 100%;
+    background-color: rgba(224, 225, 225, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.footer .copyright .copyrightText{
+    margin-left: 30px;
+}
+.footer .copyright .copyrightText >strong{
+    font-weight: bold;
+    margin: 0px 5px;
+}
+
+
+
+
+/* Footer End */
